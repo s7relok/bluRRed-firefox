@@ -15,9 +15,9 @@
   --mff-tab-font-size: 11pt;
   --mff-tab-font-weight: 400;
   --mff-tab-height: 32px;
-  --mff-tab-pinned-bg: #70c1b365;
+  --mff-tab-pinned-bg: var(--mff-bg);
   --mff-tab-selected-bg: var(--mff-bg);
-  --mff-tab-soundplaying-bg: #9c89b868;
+  --mff-tab-soundplaying-bg: #985EFFAA;
   --mff-urlbar-color: #f2f2f2;
   --mff-urlbar-background-color: var(--mff-bg);
   --mff-urlbar-focused-color: #e0fbfc;
@@ -93,7 +93,7 @@
 
 /* Hide the favicon for tabs */
 hbox.tab-content .tab-icon-image {
-  display: none !important;
+  display: visible !important;
 }
 
 /* Show the favicon for tabs that are pinned */
@@ -137,6 +137,8 @@ hbox.tab-content[pinned=true] .tab-text {
   margin-top: 4px !important;
   max-height: var(--mff-tab-height) !important;
   min-height: var(--mff-tab-height) !important;
+  margin-left: 4px !important;
+  margin-right: 4px !important;
 }
 
 .tabbrowser-tab[soundplaying="true"] {
@@ -148,8 +150,9 @@ hbox.tab-content[pinned=true] .tab-text {
   opacity: 0.7;
 }
 
+/* Enable sound icon in tabs */
 .tab-icon-sound {
-  display: none !important;
+  display: visible !important;
 }
 
 /*
@@ -278,13 +281,13 @@ toolbar#nav-bar {
 }
 
 toolbar#nav-bar {
-  padding: 4px !important;
+  padding: 4px 4px !important;
 }
 
 #urlbar {
   max-width: 70% !important;
   margin: 0 15% !important;
-  /* 	position: unset!important; */;
+/*   	position: unset!important;; */
 }
 
 #urlbar-input:focus {
@@ -337,7 +340,6 @@ splitter#sidebar-splitter {
 image#sidebar-icon {
   display: none;
 }
-
 
 /*
     _   ___ ___  _____      _____  _   _  _ ___ _
