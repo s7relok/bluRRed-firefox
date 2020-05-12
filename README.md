@@ -1,6 +1,7 @@
-# minimal-functional-fox
+# blurred-functional-fox
 
-> ###### *A minimal, yet functional configuration for Firefox!*
+> A fork of minimal functional fox
+> ###### *A ~~minimal~~ transparent and blurred, yet functional configuration for Firefox!*
 
 <!-- ![Demo](https://raw.githubusercontent.com/mut-ex/minimal-functional-fox/master/demo.gif) -->
 
@@ -32,7 +33,12 @@
   2. Search for `toolkit.legacyUserProfileCustomizations.stylesheets`
 
   3. Confirm the option is set to **true**
+  
+  4. Search for `gfx.webrender.all`
 
+  5. Confirm the option is set to **true**
+
+  6. Enable transparency/blur in your compositor
 
 
 * Make sure that you have the **Default** theme enabled
