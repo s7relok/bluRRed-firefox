@@ -43,7 +43,7 @@
 
 * Make sure that you have the **Default** theme enabled
   1. Go to the address `about:addons`
-  2. **Enable** the **Default** theme if not already enabled
+  2. **Enable** the **dark** theme if not already enabled
 
 
 ------
