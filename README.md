@@ -1,8 +1,10 @@
 # minimal-functional-fox
 
-> ###### *A minimal, yet functional configuration for Firefox!*
+> ###### *A blurred and not so minimal, yet functional configuration for Firefox!*
 
-![Demo](https://raw.githubusercontent.com/manilarome/minimal-functional-fox/master/demo.gif)
+<!-- ![Demo](https://raw.githubusercontent.com/manilarome/minimal-functional-fox/master/demo.gif) -->
+
+![screenshot](https://i.imgur.com/NMCsw52.png)
 
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 ------
