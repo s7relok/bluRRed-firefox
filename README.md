@@ -31,6 +31,12 @@
 
   3. Confirm the option is set to **true**
 
+  4. Search for `gfx.webrender.all`
+
+  5. Confirm the option is set to **true**
+
+  6. Enable transparency/blur in your compositor
+
 
 
 * Make sure that you have the **Default** theme enabled

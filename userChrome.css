@@ -1,28 +1,31 @@
- :root {
+
+:root {
 
    /* Minimal Functional Fox variables*/
-  --mff-bg: #252525;
+  --mff-bg: #00000068;
   --mff-icon-color: #f2f2f2;
   --mff-nav-toolbar-padding: 9px;
   --mff-sidebar-bg: var(--mff-bg);
   --mff-sidebar-color: #e0fbfc;
+  --mff-menupopup-bg: var(--mff-bg);
+  --mff-menupopup-color: #f2f2f2;
   --mff-tab-border-radius: 6px;
   --mff-tab-color: #fefefa;
-  --mff-tab-font-family: monospace, sans;
+  --mff-tab-font-family: default, monospace, sans;
   --mff-tab-font-size: 11pt;
   --mff-tab-font-weight: 400;
   --mff-tab-height: 32px;
-  --mff-tab-pinned-bg: #70c1b3;
-  --mff-tab-selected-bg: #353535;
-  --mff-tab-soundplaying-bg: #9c89b8;
+  --mff-tab-pinned-bg: #70c1b365;
+  --mff-tab-selected-bg: var(--mff-bg);
+  --mff-tab-soundplaying-bg: #9c89b868;
   --mff-urlbar-color: #f2f2f2;
-  --mff-urlbar-background-color: #353535;
+  --mff-urlbar-background-color: var(--mff-bg);
   --mff-urlbar-focused-color: #e0fbfc;
-  --mff-urlbar-font-family: monospace, serif;
+  --mff-urlbar-font-family: default, monospace, serif;
   --mff-urlbar-font-size: 12pt;
   --mff-urlbar-font-weight: 500;
   --mff-urlbar-results-color: #e0fbfc;
-  --mff-urlbar-results-font-family: "mononoki Nerd Font", serif;
+  --mff-urlbar-results-font-family: default, "mononoki Nerd Font", serif;
   --mff-urlbar-results-font-size: 12pt;
   --mff-urlbar-results-font-weight: 500;
   --mff-urlbar-results-url-color: #98c1d9;
@@ -38,6 +41,8 @@
   --toolbar-bgcolor: var(--mff-bg) !important;
   --urlbar-separator-color: transparent !important;
 }
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* only needed once */
 
 /*
   _____ _   ___ ___
@@ -109,7 +114,7 @@ hbox.tab-content[pinned=true] .tab-text {
   display: flex;
   overflow: hidden;
   justify-content: center;
-width: 50% !important;
+  width: 50% !important;
   max-width: 50% !important;
   min-width: 50% !important;
 }
@@ -348,4 +353,70 @@ image#sidebar-icon {
 
 toolbarseparator {
   display: none;
+}
+
+
+/* Transparency */
+#TabsToolbar, #titlebar, #main-window, #navigator-toolbox {
+	-moz-appearance: none !important;
+	background-color: transparent !important;
+	background-image: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/*Context Menu*/
+menupopup {
+	-moz-appearance: none !important;
+	background-color: var(--mff-menupopup-bg) !important;
+  color: var(--mff-menupopup-color) !important;
+	background-image: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 4px !important;
+  padding: 4px 0 !important;
+}
+
+menupopup menupopup {
+  margin: -5px 0 0 -4px;
+}
+
+menubar > menu > menupopup {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+menuitem, menupopup menu {
+  -moz-appearance: none !important;
+  padding: 4px 8px !important;
+}
+
+menuitem[type="checkbox"] image, menuitem[type="radio"] image {
+  visibility: visible !important;
+}
+
+menuitem[disabled="true"]:hover, menupopup menu[disabled="true"]:hover {
+  background: transparent !important;
+}
+
+/* Don't show window control buttons */
+#autohide-context { display:none!important; }
+#window-controls  { display:none!important; }
+
+
+/* Remove icons from the main context menu */
+#contentAreaContextMenu menuitem image,
+#contentAreaContextMenu menu image {
+	visibility: hidden;
+}
+
+
+#contentAreaContextMenu menugroup menuitem image {
+	visibility: visible;
+}
+
+
+/* Feature recommendation notification, fix width */
+#contextual-feature-recommendation-notification {
+	width: auto !important;
 }
