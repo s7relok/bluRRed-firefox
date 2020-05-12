@@ -1,11 +1,8 @@
-# blurred-functional-fox
+# minimal-functional-fox
 
-> A fork of minimal functional fox
-> ###### *A ~~minimal~~ transparent and blurred, yet functional configuration for Firefox!*
+> ###### *A minimal, yet functional configuration for Firefox!*
 
-<!-- ![Demo](https://raw.githubusercontent.com/mut-ex/minimal-functional-fox/master/demo.gif) -->
-
-![Screenshot](https://i.imgur.com/LBXvePV.png)
+![Demo](https://raw.githubusercontent.com/manilarome/minimal-functional-fox/master/demo.gif)
 
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 ------
@@ -33,7 +30,7 @@
   2. Search for `toolkit.legacyUserProfileCustomizations.stylesheets`
 
   3. Confirm the option is set to **true**
-  
+
   4. Search for `gfx.webrender.all`
 
   5. Confirm the option is set to **true**
@@ -41,9 +38,10 @@
   6. Enable transparency/blur in your compositor
 
 
+
 * Make sure that you have the **Default** theme enabled
   1. Go to the address `about:addons`
-  2. **Enable** the **dark** theme if not already enabled
+  2. **Enable** the **Default** theme if not already enabled
 
 
 ------
@@ -55,13 +53,13 @@
 You can quickly install minimal functional fox via the command-line by using `curl`:
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/mut-ex/minimal-functional-fox/master/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/manilarome/blurred-functional-fox/master/install.sh)"
 ```
 
 It is a good idea to inspect the install script for projects you aren't familiar with. To do that, you can download the install script separately, go through it to make sure everything looks OK, then go ahead and run it once you are satisfied:
 
 ```bash
-curl -Lo install.sh https://raw.githubusercontent.com/mut-ex/minimal-functional-fox/master/install.sh
+curl -Lo install.sh https://raw.githubusercontent.com/manilarome/blurred-functional-fox/master/install.sh
 sh install.sh
 ```
 

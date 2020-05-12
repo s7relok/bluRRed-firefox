@@ -5,19 +5,19 @@ echoerr() { printf "%s\n" "$*" >&2; }
 download_mff() {
     echoerr " [>>] Downloading..."
 
-    curl -LJ0 https://github.com/mut-ex/minimal-functional-fox/archive/master.tar.gz | tar -xz -C /tmp/
+    curl -LJ0 https://github.com/manilarome/blurred-functional-fox/archive/master.tar.gz | tar -xz -C /tmp/
 
     if [[ $? -eq 0 ]]; then
         echoerr " [>>] Copying..."
 
-        USERCHROME="/tmp/minimal-functional-fox-master/userChrome.css"
-        USERCONTENT="/tmp/minimal-functional-fox-master/userContent.css"
+        USERCHROME="/tmp/blurred-functional-fox-master/userChrome.css"
+        USERCONTENT="/tmp/blurred-functional-fox-master/userContent.css"
         cp -r --backup=simple -t $CHROME_DIRECTORY $USERCHROME $USERCONTENT
         rm -f USERCHROME USERCONTENT
-        cp -r /tmp/minimal-functional-fox-master/* $CHROME_DIRECTORY
+        cp -r /tmp/blurred-functional-fox-master/* $CHROME_DIRECTORY
 
         if [[ $? -eq 0 ]]; then
-            rm -rf /tmp/minimal-functional-fox-master
+            rm -rf /tmp/blurred-functional-fox-master
         else
             echoerr " [!!] There was a problem copying the files. Terminating..."
             return 1
