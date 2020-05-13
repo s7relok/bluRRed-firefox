@@ -33,11 +33,15 @@
 
   3. Confirm the option is set to **true**
 
-  4. Search for `gfx.webrender.all`
+  4. Search for `layers.acceleration.force-enabled`
 
   5. Confirm the option is set to **true**
 
-  6. Enable transparency/blur in your compositor
+  6. Search for `gfx.webrender.all`
+
+  7. Confirm the option is set to **true**
+
+  8. Enable transparency/blur in your compositor
 
 
 
