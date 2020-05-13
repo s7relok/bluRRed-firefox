@@ -388,11 +388,6 @@ menubar > menu > menupopup {
   border-top-right-radius: 0 !important;
 }
 
-menuitem, menupopup menu {
-  -moz-appearance: none !important;
-  padding: 4px 8px !important;
-}
-
 menuitem[type="checkbox"] image, menuitem[type="radio"] image {
   visibility: visible !important;
 }
@@ -412,11 +407,9 @@ menuitem[disabled="true"]:hover, menupopup menu[disabled="true"]:hover {
 	visibility: hidden;
 }
 
-
 #contentAreaContextMenu menugroup menuitem image {
 	visibility: visible;
 }
-
 
 /* Feature recommendation notification, fix width */
 #contextual-feature-recommendation-notification {
