@@ -416,11 +416,18 @@ menuitem[disabled="true"]:hover, menupopup menu[disabled="true"]:hover {
 	width: auto !important;
 }
 
-#sidebar-search-container, #sidebar-search-container search-textbox {
+#sidebar-search-container {
   -moz-appearance: none !important;
   border-radius: 6px !important;
   background-image:  none !important;
   background-color: transparent !important;
+}
+
+#sidebar-search-container search-textbox {
+  -moz-appearance: none !important;
+  border-radius: 6px !important;
+  background-image:  none !important;
+  background-color: var(--mff-bg) !important;
 }
 
 .sidebar-panel {
@@ -446,5 +453,11 @@ menuitem[disabled="true"]:hover, menupopup menu[disabled="true"]:hover {
 #browser {
   -moz-appearance: none !important;
   background-color: var(--mff-bg)  !important;
+  background-image: none !important;
+}
+
+#browser #appcontent #tabbrowser-tabbox * {
+  -moz-appearance: none !important;
+  background-color: transparent !important;
   background-image: none !important;
 }
