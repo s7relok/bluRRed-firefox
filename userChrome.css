@@ -415,3 +415,36 @@ menuitem[disabled="true"]:hover, menupopup menu[disabled="true"]:hover {
 #contextual-feature-recommendation-notification {
 	width: auto !important;
 }
+
+#sidebar-search-container, #sidebar-search-container search-textbox {
+  -moz-appearance: none !important;
+  border-radius: 6px !important;
+  background-image:  none !important;
+  background-color: transparent !important;
+}
+
+.sidebar-panel {
+  -moz-appearance: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+#sidebar-search-container > search-textbox {
+  -moz-appearance: none !important;
+  background-color: transparent; !important;
+  background-image: none !important;
+}
+
+#historyTree  {
+  background-color: transparent !important;
+}
+
+#sidebar {
+  background-color: transparent !important;
+}
+
+#browser {
+  -moz-appearance: none !important;
+  background-color: var(--mff-bg)  !important;
+  background-image: none !important;
+}
