@@ -1,8 +1,6 @@
 # minimal-functional-fox - Personnal settings adapted from original manilarome/blurred-functional-fox
----------------------------------------------------------------------------------------------------------
-> ###### *A blurred and not so minimal, yet functional configuration for Firefox!*
 
-<!-- ![Demo](https://raw.githubusercontent.com/manilarome/minimal-functional-fox/master/demo.gif) -->
+> ###### *A blurred and not so minimal, yet functional configuration for Firefox!*
 
 ![screenshot](https://i.imgur.com/YJJFGCy.png)
 
@@ -54,23 +52,6 @@
 
 ## Installation
 
-### Quick Install
-
-You can quickly install minimal functional fox via the command-line by using `curl`:
-
-```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/manilarome/blurred-functional-fox/master/install.sh)"
-```
-
-It is a good idea to inspect the install script for projects you aren't familiar with. To do that, you can download the install script separately, go through it to make sure everything looks OK, then go ahead and run it once you are satisfied:
-
-```bash
-curl -Lo install.sh https://raw.githubusercontent.com/manilarome/blurred-functional-fox/master/install.sh
-sh install.sh
-```
-
-**Note:** The install script will create a backup of your existing `userChrome.css`, and `userContent.css` files by renaming them to `userChrome.css~`, and `userContent.css~` respectively in the chrome directory.
-
 ### Manual Install
 
 If quick install does not work, or if you simply prefer to; you can manually install  minimal functional fox through the following steps:
@@ -90,7 +71,6 @@ After installation, restart Firefox to see the effects.
     * Forward button
     * Back button
     * Downloads button
-* The new tab page extension is called **nightTab**. [You can can find it here](https://addons.mozilla.org/en-US/firefox/addon/nighttab/)
 
 ------
 
