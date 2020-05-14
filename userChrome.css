@@ -33,7 +33,7 @@
   /*   --mff-urlbar-font-weight: 600; */
 
   /* Overriden Firefox variables*/
-  --autocomplete-popup-background: var(--mff-bg) !important;
+/*   --autocomplete-popup-background: var(--mff-bg) !important; */
   --default-arrowpanel-background: var(--mff-bg) !important;
   --default-arrowpanel-color: #fefefa !important;
   --lwt-toolbarbutton-icon-fill: var(--mff-icon-color) !important;
@@ -184,6 +184,7 @@ hbox.tab-content[pinned=true] .tab-text {
   font-weight: var(--mff-urlbar-results-font-weight);
   font-size: var(--mff-urlbar-results-font-size) !important;
   color: var(--mff-urlbar-results-color) !important;
+  background-color: #161616CC;
 }
 
 .urlbarView-row[type="bookmark"] > span{
@@ -214,7 +215,7 @@ hbox.tab-content[pinned=true] .tab-text {
 }
 
 #tracking-protection-icon-container, #identity-box {
-  display: none;
+  display: visible;
 }
 
 #back-button > .toolbarbutton-icon{
@@ -273,7 +274,7 @@ tab.tabbrowser-tab:hover {
 }
 
 image#star-button {
-  display: none;
+  display: visible;
 }
 
 toolbar#nav-bar {
@@ -370,7 +371,7 @@ toolbarseparator {
 /*Context Menu*/
 menupopup {
 	-moz-appearance: none !important;
-	background-color: var(--mff-menupopup-bg) !important;
+	background-color: #161616CC !important;
   color: var(--mff-menupopup-color) !important;
 	background-image: none !important;
   box-shadow: none !important;
