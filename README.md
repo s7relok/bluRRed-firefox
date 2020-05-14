@@ -1,10 +1,10 @@
-# minimal-functional-fox
-
+# minimal-functional-fox - Personnal settings adapted from original manilarome/blurred-functional-fox
+---------------------------------------------------------------------------------------------------------
 > ###### *A blurred and not so minimal, yet functional configuration for Firefox!*
 
 <!-- ![Demo](https://raw.githubusercontent.com/manilarome/minimal-functional-fox/master/demo.gif) -->
 
-![screenshot](https://i.imgur.com/NMCsw52.png)
+![screenshot](https://i.imgur.com/YJJFGCy.png)
 
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 ------
