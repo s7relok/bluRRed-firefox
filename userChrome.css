@@ -2,7 +2,7 @@
 :root {
 
    /* Minimal Functional Fox variables*/
-  --mff-bg: #00000068;
+  --mff-bg: #3d3d3e66;
   --mff-icon-color: #f2f2f2;
   --mff-nav-toolbar-padding: 9px;
   --mff-sidebar-bg: var(--mff-bg);
@@ -12,7 +12,7 @@
   --mff-tab-border-radius: 6px;
   --mff-tab-color: #fefefa;
   --mff-tab-font-family: default, monospace, sans;
-  --mff-tab-font-size: 11pt;
+  --mff-tab-font-size: 10pt;
   --mff-tab-font-weight: 400;
   --mff-tab-height: 32px;
   --mff-tab-pinned-bg: var(--mff-bg);
@@ -81,7 +81,7 @@
 }
 
 .tab-close-button {
- display: none !important;
+ display: visible !important;
 }
 
 .tab-text {
