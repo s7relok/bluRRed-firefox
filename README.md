@@ -1,4 +1,4 @@
-# minimal-functional-fox - Personnal settings adapted from original manilarome/blurred-functional-fox
+# bluRRed-firefox - Personnal settings adapted from original manilarome/blurred-functional-fox
 
 > ###### *A blurred and not so minimal, yet functional configuration for Firefox!*
 
